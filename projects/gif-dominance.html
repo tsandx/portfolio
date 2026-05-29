@@ -63,6 +63,35 @@
     }
     .gif-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 2rem 0; }
   </style>
+
+  <style>
+    .project-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 12px;
+      margin: 3rem 0 2rem;
+      border-top: 0.5px solid var(--border);
+      padding-top: 2rem;
+    }
+    .project-nav a {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      padding: 1rem 1.25rem;
+      border: 0.5px solid var(--border);
+      border-radius: var(--radius-md);
+      text-decoration: none;
+      transition: background 0.15s;
+      color: inherit;
+    }
+    .project-nav a:hover { background: var(--bg-secondary); }
+    .project-nav a.next { text-align: right; }
+    .nav-label { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-tertiary); font-weight: 500; }
+    .nav-title { font-size: 15px; font-weight: 500; color: var(--text-primary); }
+    .project-nav .spacer { flex: 1; }
+  </style>
 </head>
 <body>
 
@@ -174,10 +203,21 @@
 
   <p class="body-text">What started as a deliberate move to outrank Harvard became something much larger — proof that a university social media team, with the right strategy and consistency, could compete at the brand level with the biggest names on the internet. UF didn't just win in higher ed. They won on Giphy.</p>
 
+
+  <div class="project-nav">
+    <a href="gators-wear-masks.html" class="prev">
+        <span class="nav-label">← Previous</span>
+        <span class="nav-title">#GatorsWearMasks</span>
+      </a>
+    <a href="tweet-race.html" class="next">
+        <span class="nav-label">Next →</span>
+        <span class="nav-title">Tweet Race</span>
+      </a>
+  </div>
 </main>
 
 <footer>
-  <p>&copy; 2025 Todd Sanders &nbsp;·&nbsp; tjsanders@gmail.com &nbsp;·&nbsp; 352-359-7555</p>
+  <p>&copy; 2025 Todd Sanders </p>
 </footer>
 
 </body>

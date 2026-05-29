@@ -28,6 +28,35 @@
     .cdc-stat { font-size: 48px; font-weight: 500; letter-spacing: -0.03em; line-height: 1; margin-bottom: 0.5rem; }
     .cdc-desc { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
   </style>
+
+  <style>
+    .project-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 12px;
+      margin: 3rem 0 2rem;
+      border-top: 0.5px solid var(--border);
+      padding-top: 2rem;
+    }
+    .project-nav a {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      padding: 1rem 1.25rem;
+      border: 0.5px solid var(--border);
+      border-radius: var(--radius-md);
+      text-decoration: none;
+      transition: background 0.15s;
+      color: inherit;
+    }
+    .project-nav a:hover { background: var(--bg-secondary); }
+    .project-nav a.next { text-align: right; }
+    .nav-label { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-tertiary); font-weight: 500; }
+    .nav-title { font-size: 15px; font-weight: 500; color: var(--text-primary); }
+    .project-nav .spacer { flex: 1; }
+  </style>
 </head>
 <body>
 
@@ -180,10 +209,21 @@
 
   <p class="body-text">The success of #GatorsWearMasks was only possible because the community owned it. The hashtag came from the Department of Urology. The coach posted without being asked. Students wrote the hashtag on a chalkboard themselves. A campaign built on trust in the community produced proof that social media, done right, can change behavior at scale.</p>
 
+
+  <div class="project-nav">
+    <a href="gallery-1853.html" class="prev">
+        <span class="nav-label">← Previous</span>
+        <span class="nav-title">Gallery 1853</span>
+      </a>
+    <a href="gif-dominance.html" class="next">
+        <span class="nav-label">Next →</span>
+        <span class="nav-title">GIF Dominance</span>
+      </a>
+  </div>
 </main>
 
 <footer>
-  <p>&copy; 2025 Todd Sanders &nbsp;·&nbsp; tjsanders@gmail.com &nbsp;·&nbsp; 352-359-7555</p>
+  <p>&copy; 2025 Todd Sanders </p>
 </footer>
 
 </body>
