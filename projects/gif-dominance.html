@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIF Dominance — Todd Sanders</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <style>
+    .wide-img { width: 100%; border-radius: var(--radius-lg); border: 0.5px solid var(--border); display: block; margin: 1.5rem 0; }
+    .gallery-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 1.5rem 0; }
+    .gallery-2 img { width: 100%; border-radius: var(--radius-md); border: 0.5px solid var(--border); display: block; object-fit: cover; height: 280px; }
+    .leaderboard {
+      border: 0.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin: 2rem 0;
+    }
+    .lb-header {
+      padding: 0.75rem 1.25rem;
+      background: var(--bg-secondary);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+      font-weight: 500;
+      border-bottom: 0.5px solid var(--border);
+    }
+    .lb-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.85rem 1.25rem;
+      border-bottom: 0.5px solid var(--border);
+      font-size: 14px;
+    }
+    .lb-row:last-child { border-bottom: none; }
+    .lb-row.uf { background: var(--bg-secondary); }
+    .lb-rank { font-size: 13px; color: var(--text-tertiary); min-width: 28px; font-weight: 500; }
+    .lb-row.uf .lb-rank { color: var(--text-primary); }
+    .lb-name { flex: 1; color: var(--text-secondary); }
+    .lb-row.uf .lb-name { color: var(--text-primary); font-weight: 500; }
+    .lb-views { font-size: 13px; color: var(--text-tertiary); font-variant-numeric: tabular-nums; }
+    .lb-row.uf .lb-views { color: var(--text-primary); font-weight: 500; }
+    .milestone {
+      border-left: 2px solid var(--border);
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      border-radius: 0;
+      background: var(--bg-secondary);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    }
+    .milestone-label {
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+      margin-bottom: 4px;
+    }
+    .milestone-text {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+    .gif-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 2rem 0; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">Todd Sanders</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../index.html#projects" class="active">Work</a></li>
+    <li><a href="../press.html">Press</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+
+  <a href="../index.html#projects" class="back-link" style="margin-top:2rem;display:inline-flex;">← All projects</a>
+
+  <img
+    src="../assets/images/gif-dominance/giphy-dashboard.png"
+    alt="UF's Giphy dashboard showing 2.1K uploads and 7 billion total GIF and sticker views"
+    class="hero-img"
+    style="object-position: center top; border: 0.5px solid var(--border);"
+  >
+
+  <p class="section-label">Strategy · University of Florida · 2016–2021</p>
+  <h1 style="font-size:32px;font-weight:500;letter-spacing:-0.02em;margin-bottom:0.75rem;line-height:1.2">GIF Dominance</h1>
+  <p style="font-size:17px;color:var(--text-secondary);margin-bottom:1.75rem;line-height:1.6">UF set out to beat Harvard on Giphy. They became the first university to 1 billion GIF views — and kept going, ultimately outpacing Google, Nike, Facebook, Starbucks, and Taco Bell.</p>
+
+  <div class="meta-row">
+    <div class="meta-item"><strong>Role</strong> &nbsp; Director of Social Media</div>
+    <div class="meta-item"><strong>Platform</strong> &nbsp; Giphy + social keyboard integration</div>
+    <div class="meta-item"><strong>Org</strong> &nbsp; University of Florida</div>
+  </div>
+
+  <hr>
+
+  <p class="section-label">The goal</p>
+  <div class="goal-block">
+    <p>Harvard was on Giphy. UF wanted to be associated with top academic institutions — and saw an opportunity to dominate a platform that few universities were taking seriously. The strategy was simple: build a massive, high-quality GIF library, get it integrated into social keyboards, and let the internet do the rest.</p>
+  </div>
+
+  <p class="section-label">The strategy</p>
+  <p class="body-text">As Giphy grew into the backbone of social media expression — powering GIF keyboards inside iMessage, Twitter, Instagram, Slack, and virtually every major platform — having a strong Giphy presence meant embedding UF into everyday digital conversations. Every time someone searched "go gators," "Florida," or even just "F," a UF GIF could appear.</p>
+
+  <p class="body-text">The team built a deliberate library of over 2,100 GIFs and stickers — game day moments, campus scenes, mascot animations, seasonal content, and stickers designed to perform in search. The goal wasn't just views. It was ubiquity.</p>
+
+  <div class="milestone">
+    <div class="milestone-label">First in higher ed</div>
+    <div class="milestone-text">UF became the first university to reach 1 billion GIF views on Giphy.</div>
+  </div>
+
+  <p class="section-label">The competition</p>
+  <p class="body-text">The benchmark was Harvard. But as UF's numbers climbed, a new comparison emerged — not just against other universities, but against major brands. By July 2021, UF's 4 billion views placed it above Google, Nike, Facebook, Starbucks, Taco Bell, McDonald's, Wendy's, Amazon, Coca-Cola, and Mercedes-Benz. Only Netflix, Disney, and ESPN ranked higher.</p>
+
+  <img src="../assets/images/gif-dominance/leaderboard-tweet.png" alt="Tweet from @tsand showing GIF views on Giphy: Netflix 32.8B, Disney 7.1B, ESPN 7B, UF 4B, Google 3.8B, Nike 2.8B, Facebook 2.6B, Starbucks 2.5B, Taco Bell 2.5B" class="wide-img" style="border-radius:var(--radius-md);">
+
+  <div class="leaderboard">
+    <div class="lb-header">Giphy brand rankings by views · July 2021</div>
+    <div class="lb-row"><div class="lb-rank">1</div><div class="lb-name">Netflix</div><div class="lb-views">32.8B</div></div>
+    <div class="lb-row"><div class="lb-rank">2</div><div class="lb-name">Disney</div><div class="lb-views">7.1B</div></div>
+    <div class="lb-row"><div class="lb-rank">3</div><div class="lb-name">ESPN</div><div class="lb-views">7B</div></div>
+    <div class="lb-row uf"><div class="lb-rank">4</div><div class="lb-name">University of Florida @UF</div><div class="lb-views">4B</div></div>
+    <div class="lb-row"><div class="lb-rank">5</div><div class="lb-name">Google</div><div class="lb-views">3.8B</div></div>
+    <div class="lb-row"><div class="lb-rank">6</div><div class="lb-name">Nike</div><div class="lb-views">2.8B</div></div>
+    <div class="lb-row"><div class="lb-rank">7</div><div class="lb-name">Facebook</div><div class="lb-views">2.6B</div></div>
+    <div class="lb-row"><div class="lb-rank">8</div><div class="lb-name">Starbucks</div><div class="lb-views">2.5B</div></div>
+    <div class="lb-row"><div class="lb-rank">9</div><div class="lb-name">Taco Bell</div><div class="lb-views">2.5B</div></div>
+    <div class="lb-row"><div class="lb-rank">10</div><div class="lb-name">McDonald's</div><div class="lb-views">648M</div></div>
+  </div>
+
+  <p class="section-label">Versus the competition in higher ed</p>
+  <p class="body-text">The comparison against Michigan tells the story clearly. With 1,000 uploads to Michigan's 288, UF's 1.7 billion views at that snapshot dwarfed Michigan's 32.7 million — a 52x advantage with roughly 3.5x the content volume. The gap wasn't just about output; it was about strategy.</p>
+
+  <img src="../assets/images/gif-dominance/vs-michigan.jpg" alt="Side-by-side comparison: University of Michigan 288 uploads, 32.7M views vs University of Florida 1K uploads, 1.7B views" class="wide-img" style="border-radius:var(--radius-md);">
+
+  <p class="section-label">Top performing GIFs</p>
+  <p class="body-text">The top five GIFs alone account for over 1.1 billion views. The most-viewed GIF — an animated Florida "F" — was triggered most often when users searched "Go Gators," embedding UF into game day conversations across every platform that used Giphy's keyboard.</p>
+
+  <img src="../assets/images/gif-dominance/top-gifs.png" alt="Giphy top GIFs dashboard: #1 at 293M views (Go Gators), #2 at 265M (F), #3 at 219M (Florida), #4 at 185M (Sun Shining), #5 at 160M" class="wide-img" style="border-radius:var(--radius-md);">
+
+  <hr>
+
+  <p class="section-label">When a GIF goes physical</p>
+  <p class="body-text">One pixel-art Albert the Alligator GIF became so popular on campus that the team built a life-size physical version out of colored blocks — and took it around campus for students to pose with. Photos of the installation spread organically across social media, extending the GIF's reach into the real world and back online again. A piece of digital content had become a campus landmark.</p>
+
+  <img src="../assets/images/gif-dominance/giphy-stats.png" alt="Students posing with the life-size pixel art Albert the Alligator installation on UF campus, next to the original GIF design" class="wide-img" style="border-radius:var(--radius-md);">
+
+  <p class="body-text">The reach didn't stop there. One of UF's most-viewed GIFs — Albert the Alligator waving hello — appeared hand-painted on a student's graduation cap at commencement. A GIF that had been viewed hundreds of millions of times online found its way onto someone's most important day. That's not a metric. That's meaning.</p>
+
+  <img src="../assets/images/gif-dominance/gradcap.png" alt="UF GIF of Albert the Alligator waving alongside a graduation cap hand-painted with the same GIF design and the words 'see ya later, gator'" class="wide-img" style="border-radius:var(--radius-md);">
+
+  <hr>
+
+  <p class="section-label">The win</p>
+
+  <div class="gif-stats">
+    <div class="stat">
+      <span class="stat-num">7B</span>
+      <span class="stat-label">total GIF & sticker views</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">2.1K</span>
+      <span class="stat-label">GIFs & stickers uploaded</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">#4</span>
+      <span class="stat-label">globally on Giphy, ahead of Google, Nike & Facebook</span>
+    </div>
+  </div>
+
+  <p class="body-text">What started as a deliberate move to outrank Harvard became something much larger — proof that a university social media team, with the right strategy and consistency, could compete at the brand level with the biggest names on the internet. UF didn't just win in higher ed. They won on Giphy.</p>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Todd Sanders &nbsp;·&nbsp; tjsanders@gmail.com &nbsp;·&nbsp; 352-359-7555</p>
+</footer>
+
+</body>
+</html>
