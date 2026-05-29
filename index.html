@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todd Sanders — Social Media Leader</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .hero {
+      padding: 5rem 0 3.5rem;
+      border-bottom: 0.5px solid var(--border);
+      margin-bottom: 3.5rem;
+    }
+    .hero-eyebrow {
+      font-size: 13px;
+      color: var(--text-tertiary);
+      margin-bottom: 1.25rem;
+      letter-spacing: 0.04em;
+    }
+    .hero h1 {
+      font-size: 42px;
+      font-weight: 500;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      max-width: 620px;
+    }
+    .hero-sub {
+      font-size: 17px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      max-width: 540px;
+      margin-bottom: 2rem;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--text-primary);
+      color: var(--bg);
+      font-size: 14px;
+      font-weight: 500;
+      padding: 10px 20px;
+      border-radius: var(--radius-md);
+      border: none;
+      cursor: pointer;
+      transition: opacity 0.15s;
+      text-decoration: none;
+    }
+    .btn-primary:hover { opacity: 0.8; }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      padding: 10px 20px;
+      border-radius: var(--radius-md);
+      border: 0.5px solid var(--border);
+      transition: background 0.15s;
+      text-decoration: none;
+    }
+    .btn-secondary:hover { background: var(--bg-secondary); }
+    .credentials {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 4rem;
+    }
+    .cred-card {
+      background: var(--bg-secondary);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+    }
+    .cred-num {
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .cred-label {
+      font-size: 12px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    .project-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin-bottom: 4rem;
+    }
+    .project-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 0;
+      border-bottom: 0.5px solid var(--border);
+      gap: 1.5rem;
+      transition: opacity 0.15s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .project-row:first-child { border-top: 0.5px solid var(--border); }
+    .project-row:hover { opacity: 0.6; }
+    .project-meta {
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      color: var(--text-tertiary);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .project-title {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+    .project-desc {
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+    .project-thumb {
+      width: 80px;
+      height: 56px;
+      object-fit: cover;
+      border-radius: 6px;
+      flex-shrink: 0;
+      border: 0.5px solid var(--border);
+    }
+    .project-thumb-placeholder {
+      width: 80px;
+      height: 56px;
+      border-radius: 6px;
+      flex-shrink: 0;
+      border: 0.5px solid var(--border);
+      background: var(--bg-secondary);
+    }
+    .press-strip {
+      border-top: 0.5px solid var(--border);
+      border-bottom: 0.5px solid var(--border);
+      padding: 2rem 0;
+      margin-bottom: 4rem;
+    }
+    .press-logos {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .press-name {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-tertiary);
+      letter-spacing: 0.05em;
+    }
+    .press-divider {
+      width: 1px;
+      height: 16px;
+      background: var(--border);
+    }
+    .contact-section {
+      padding: 3rem 0 4rem;
+      border-top: 0.5px solid var(--border);
+    }
+    .contact-section h2 {
+      font-size: 24px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.75rem;
+    }
+    .contact-section p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      max-width: 480px;
+      line-height: 1.6;
+    }
+    .contact-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .contact-link {
+      font-size: 14px;
+      color: var(--text-secondary);
+      border: 0.5px solid var(--border);
+      padding: 8px 16px;
+      border-radius: var(--radius-md);
+      transition: background 0.15s, color 0.15s;
+      text-decoration: none;
+    }
+    .contact-link:hover { background: var(--bg-secondary); color: var(--text-primary); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Todd Sanders</a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="index.html#projects">Work</a></li>
+    <li><a href="press.html">Press</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+
+  <div class="hero">
+    <p class="hero-eyebrow">Social Media Leader · Menlo Park, CA</p>
+    <h1>15 years of building communities that do something.</h1>
+    <p class="hero-sub">Inaugural Director of Social Media at two universities. Recognized in Wired and The Chronicle of Higher Education. The kind of work that ends up in a CDC study, a presidential office, and on a graduation cap.</p>
+    <div class="hero-actions">
+      <a href="index.html#projects" class="btn-primary">See the work →</a>
+      <a href="press.html" class="btn-secondary">Press & recognition</a>
+    </div>
+  </div>
+
+  <div class="credentials">
+    <div class="cred-card">
+      <span class="cred-num">2M+</span>
+      <span class="cred-label">followers built across UF's social channels from scratch</span>
+    </div>
+    <div class="cred-card">
+      <span class="cred-num">7B</span>
+      <span class="cred-label">GIF views — ahead of Google, Nike & Facebook on Giphy</span>
+    </div>
+    <div class="cred-card">
+      <span class="cred-num">98%</span>
+      <span class="cred-label">mask compliance at UF — #1 in a CDC study of six campuses</span>
+    </div>
+  </div>
+
+  <div class="press-strip">
+    <p class="section-label" style="margin-bottom:1rem">Featured in</p>
+    <div class="press-logos">
+      <span class="press-name">Wired</span>
+      <div class="press-divider"></div>
+      <span class="press-name">The Chronicle of Higher Education</span>
+      <div class="press-divider"></div>
+      <span class="press-name">Rival IQ</span>
+      <div class="press-divider"></div>
+      <span class="press-name">Asher Agency</span>
+      <div class="press-divider"></div>
+      <span class="press-name">Best Colleges</span>
+      <div class="press-divider"></div>
+      <span class="press-name">CASE Gold Medal</span>
+    </div>
+  </div>
+
+  <p class="section-label" id="projects">Selected work</p>
+
+  <div class="project-list">
+
+    <a href="projects/greetings-from-gainesville.html" class="project-row">
+      <div>
+        <div class="project-meta">Campaign · UF · 2017</div>
+        <div class="project-title">Greetings from Gainesville</div>
+        <div class="project-desc">A postcard activation that reached 41 states and 34 countries</div>
+      </div>
+      <img src="assets/images/greetings-from-gainesville/postcard-closeup.jpg" alt="" class="project-thumb">
+    </a>
+
+    <a href="projects/orange-bowl-blitz.html" class="project-row">
+      <div>
+        <div class="project-meta">Campaign · UF · 2019</div>
+        <div class="project-title">Orange Bowl Blitz</div>
+        <div class="project-desc">LED trucks, billboards, and a duct-taped orange — 1.1M Twitter impressions in 24 hours</div>
+      </div>
+      <img src="assets/images/orange-bowl-blitz/truck1.jpg" alt="" class="project-thumb" style="object-position:center 70%;">
+    </a>
+
+    <a href="projects/gallery-1853.html" class="project-row">
+      <div>
+        <div class="project-meta">Campaign · UF · 2016</div>
+        <div class="project-title">Gallery 1853</div>
+        <div class="project-desc">A hashtag that became a real art show — and permanent art in the President's Office</div>
+      </div>
+      <img src="assets/images/gallery-1853/her-photo.jpg" alt="" class="project-thumb" style="object-position:center 20%;">
+    </a>
+
+    <a href="projects/gators-wear-masks.html" class="project-row">
+      <div>
+        <div class="project-meta">Campaign · UF · 2020</div>
+        <div class="project-title">#GatorsWearMasks</div>
+        <div class="project-desc">81M impressions. 98% mask compliance. A CDC study confirmed it worked.</div>
+      </div>
+      <img src="assets/images/gators-wear-masks/chalkboard.png" alt="" class="project-thumb">
+    </a>
+
+    <a href="projects/gif-dominance.html" class="project-row">
+      <div>
+        <div class="project-meta">Strategy · UF · 2016–2021</div>
+        <div class="project-title">GIF Dominance</div>
+        <div class="project-desc">7 billion views — ahead of Google, Nike, and Facebook on Giphy</div>
+      </div>
+      <img src="assets/images/gif-dominance/giphy-dashboard.png" alt="" class="project-thumb" style="object-position:center top;">
+    </a>
+
+    <a href="projects/tweet-race.html" class="project-row">
+      <div>
+        <div class="project-meta">Campaign · Personal · 2011</div>
+        <div class="project-title">Tweet Race</div>
+        <div class="project-desc">Won a car on Twitter. Beat Serena Williams. Raised $50K for St. Jude.</div>
+      </div>
+      <img src="assets/images/tweet-race/the-car.jpg" alt="" class="project-thumb" style="object-position:center 60%;">
+    </a>
+
+  </div>
+
+  <div class="contact-section">
+    <h2>Let's talk.</h2>
+    <p>15 years of building communities, launching platforms, and finding the unexpected angle. If you're looking for someone who's done it all — and has the receipts — I'd love to connect.</p>
+    <div class="contact-links">
+      <a href="mailto:tjsanders@gmail.com" class="contact-link">tjsanders@gmail.com</a>
+      <a href="tel:3523597555" class="contact-link">352-359-7555</a>
+      <a href="press.html" class="contact-link">Press & recognition →</a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Todd Sanders &nbsp;·&nbsp; tjsanders@gmail.com &nbsp;·&nbsp; 352-359-7555</p>
+</footer>
+
+</body>
+</html>
