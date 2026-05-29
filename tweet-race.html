@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tweet Race — Todd Sanders</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <style>
+    .scoreboard {
+      border: 0.5px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin: 2rem 0;
+    }
+    .score-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.9rem 1.25rem;
+      border-bottom: 0.5px solid var(--border);
+    }
+    .score-row:last-child { border-bottom: none; }
+    .score-row.winner { background: var(--bg-secondary); }
+    .score-place {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-tertiary);
+      min-width: 28px;
+    }
+    .score-row.winner .score-place { color: var(--text-primary); }
+    .score-team { flex: 1; font-size: 14px; color: var(--text-secondary); }
+    .score-row.winner .score-team { color: var(--text-primary); font-weight: 500; }
+    .score-pts { font-size: 13px; font-variant-numeric: tabular-nums; color: var(--text-tertiary); }
+    .score-row.winner .score-pts { color: var(--text-primary); font-weight: 500; }
+    .wide-img { width: 100%; border-radius: var(--radius-lg); border: 0.5px solid var(--border); display: block; margin: 1.5rem 0; }
+    .gallery-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 1.5rem 0; }
+    .gallery-2 img { width: 100%; height: 240px; object-fit: cover; border-radius: var(--radius-md); border: 0.5px solid var(--border); display: block; }
+    .challenge-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px;
+      margin: 1.5rem 0;
+    }
+    .challenge-pill {
+      background: var(--bg-secondary);
+      border-radius: var(--radius-md);
+      padding: 0.6rem 0.75rem;
+      font-size: 12px;
+      color: var(--text-secondary);
+      border: 0.5px solid var(--border);
+      line-height: 1.4;
+    }
+    .result-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin: 2rem 0;
+    }
+    .charity-card {
+      background: var(--bg-secondary);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1rem;
+      text-align: center;
+    }
+    .charity-amount {
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .charity-org { font-size: 12px; color: var(--text-secondary); line-height: 1.5; }
+    .campaign-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin: 2rem 0;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">Todd Sanders</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../index.html#projects" class="active">Work</a></li>
+    <li><a href="../press.html">Press</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+
+  <a href="../index.html#projects" class="back-link" style="margin-top:2rem;display:inline-flex;">← All projects</a>
+
+  <img
+    src="../assets/images/tweet-race/big-check.jpg"
+    alt="Todd Sanders holding a $25,000 check for St. Jude Children's Research Hospital at the Tweet Race finish line"
+    class="hero-img"
+    style="object-position: center 20%;"
+  >
+
+  <p class="section-label">Campaign · Personal · February 2011</p>
+  <h1 style="font-size:32px;font-weight:500;letter-spacing:-0.02em;margin-bottom:0.75rem;line-height:1.2">Tweet Race</h1>
+  <p style="font-size:17px;color:var(--text-secondary);margin-bottom:1.75rem;line-height:1.6">Out of nearly 2,000 applicants, Todd Sanders and co-driver John Pedersen were selected to drive a Mercedes-Benz 1,500 miles from Los Angeles to Dallas — powered entirely by tweets — and won. They beat Serena Williams in the process and raised $50K for St. Jude.</p>
+
+  <div class="meta-row">
+    <div class="meta-item"><strong>Role</strong> &nbsp; Driver, Team S (@tsand)</div>
+    <div class="meta-item"><strong>Team Coach</strong> &nbsp; Pete Wentz</div>
+    <div class="meta-item"><strong>Route</strong> &nbsp; Los Angeles → Dallas, Feb 2–4, 2011</div>
+  </div>
+
+  <hr>
+
+  <p class="section-label">The setup</p>
+  <div class="goal-block">
+    <p>Mercedes-Benz had never run a Super Bowl ad. They had zero Twitter followers. To mark their first foray into social media — and introduce the brand to a younger generation — they dreamed up the world's first Twitter-fueled race: four teams, four cities, 1,400 miles, powered only by tweets.</p>
+  </div>
+
+  <p class="body-text">Out of 1,949 applicants who competed through the Mercedes-Benz Facebook page, four two-person driving teams were chosen based on social media prowess, personality, and "other intangibles." Todd Sanders — then Social Media Specialist at University of Wisconsin–Green Bay — and his co-driver John Pedersen, a friend he'd met on Twitter, were selected as Team S. Their vehicle: a 2011 Mercedes-Benz S400 Hybrid. Their starting point: Los Angeles. Their celebrity coach: Pete Wentz of Fall Out Boy.</p>
+
+  <div class="gallery-2">
+    <img src="../assets/images/tweet-race/in-the-car.jpg" alt="Todd Sanders and John Pedersen posing with the #MBteamS wrapped Mercedes before the race" style="object-position: center 40%;">
+    <img src="../assets/images/tweet-race/the-car.jpg" alt="The Team S Mercedes S400 Hybrid wrapped with Tweet Race branding, parked in front of a rocket in the desert">
+  </div>
+
+  <p class="section-label">How it worked</p>
+  <p class="body-text">Every four tweets from supporters using #MBteamS moved the car one mile. The team with the most points at the finish line — earned through tweet volume plus a series of social media challenges along the route — won a pair of brand-new 2012 Mercedes-Benz C-Class Coupes. Their charity would also receive a donation based on their finish.</p>
+
+  <p class="body-text">The nine challenges pushed the teams to generate creative content in real time: marshalling fans at specific locations, filming a 60-second commercial for the S-Class they were driving, acting out pages from their owner's manual, and staging their vehicle in a fashion shoot — all documented and shared live on Twitter.</p>
+
+  <div class="challenge-grid">
+    <div class="challenge-pill">Film a 60-second S-Class commercial</div>
+    <div class="challenge-pill">Stage the car in a fashion shoot</div>
+    <div class="challenge-pill">Act out the owner's manual</div>
+    <div class="challenge-pill">Marshal fans at a given location</div>
+    <div class="challenge-pill">Record a team video challenge</div>
+    <div class="challenge-pill">Hashtag trending challenge</div>
+    <div class="challenge-pill">Social scavenger hunt</div>
+    <div class="challenge-pill">Live crowd activation</div>
+    <div class="challenge-pill">Engagement sprint</div>
+  </div>
+
+  <img src="../assets/images/tweet-race/map.jpg" alt="Mercedes Tweet Race microsite map showing Team S's position and live tweet feed during the race" class="wide-img">
+
+  <img src="../assets/images/tweet-race/points.jpg" alt="Tweet Race scoreboard showing Team S in 1st place with 33,840 total points" class="wide-img" style="border-radius:var(--radius-md);">
+
+  <p class="section-label">The win</p>
+  <p class="body-text">Team S led the race from start to finish. Over three days and 1,500 miles, they generated 43,000 tweets and accumulated 131,643 total points — nearly double their nearest competitor. They crossed the finish line in Dallas in first place, beating out three other teams including the team coached by 13-time Grand Slam champion Serena Williams.</p>
+
+  <img src="../assets/images/tweet-race/winning.jpg" alt="All Tweet Race teams and coaches at the finish line celebration in Dallas" style="object-position:center 30%;" class="wide-img">
+
+  <img src="../assets/images/tweet-race/microsite.png" alt="Mercedes Tweet Race microsite showing Team S as winners with 132,643 total points" class="wide-img">
+
+  <p class="body-text">The prize: two 2012 Mercedes-Benz C-Class Coupes. The cause: $50,000 for St. Jude Children's Research Hospital — $45,000 donated by Mercedes-Benz and an additional $5,000 raised directly by Team S's supporters through the St. Jude fundraising page.</p>
+
+  <img src="../assets/images/tweet-race/big-check.jpg" alt="Todd Sanders holding the $25,000 Tweet Race check for St. Jude. Serena Williams, in the background, covers her face." class="wide-img">
+
+  <p style="font-size:13px;color:var(--text-tertiary);margin-top:-1rem;margin-bottom:2rem;">Todd Sanders and John Pedersen, hidden behind the $25,000 check as the crowd erupted. Serena Williams is on the right.</p>
+
+  <hr>
+
+  <p class="section-label">Final standings</p>
+  <div class="scoreboard">
+    <div class="score-row winner">
+      <div class="score-place">1st</div>
+      <div class="score-team">Team S — Todd Sanders & John Pedersen · Coach: Pete Wentz · Charity: St. Jude Children's Research Hospital</div>
+      <div class="score-pts">131,643 pts</div>
+    </div>
+    <div class="score-row">
+      <div class="score-place">2nd</div>
+      <div class="score-team">Team CL — Layla Kayleigh & Julissa Bermudez · Coach: Rev Run · Charity: Lower Eastside Service Center</div>
+      <div class="score-pts">75,092 pts</div>
+    </div>
+    <div class="score-row">
+      <div class="score-place">3rd</div>
+      <div class="score-team">Team GL — Jennifer Marshall & Meredith Sinclair · Coach: Serena Williams · Charity: Serena Williams Foundation</div>
+      <div class="score-pts">45,944 pts</div>
+    </div>
+    <div class="score-row">
+      <div class="score-place">4th</div>
+      <div class="score-team">Team E — Len Kendall & John Morrison · Coach: Nick Swisher · Charity: Swish's Wishes</div>
+      <div class="score-pts">39,763 pts</div>
+    </div>
+  </div>
+
+  <p class="section-label">Charity raised</p>
+  <div class="result-grid">
+    <div class="charity-card">
+      <span class="charity-amount">$50K</span>
+      <span class="charity-org">St. Jude Children's Research Hospital<br><span style="color:var(--text-tertiary)">Team S (1st place)</span></span>
+    </div>
+    <div class="charity-card">
+      <span class="charity-amount">$25K</span>
+      <span class="charity-org">Lower Eastside Service Center<br><span style="color:var(--text-tertiary)">Team CL (2nd)</span></span>
+    </div>
+    <div class="charity-card">
+      <span class="charity-amount">$25K</span>
+      <span class="charity-org">Serena Williams Foundation<br><span style="color:var(--text-tertiary)">Team GL (3rd)</span></span>
+    </div>
+  </div>
+
+  <p class="section-label">Campaign impact</p>
+  <div class="campaign-stats">
+    <div class="stat">
+      <span class="stat-num">545M</span>
+      <span class="stat-label">Twitter impressions</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">2M</span>
+      <span class="stat-label">video views (#2 Ad Age viral chart)</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">77K</span>
+      <span class="stat-label">new Twitter followers for MB (from zero)</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">$120K</span>
+      <span class="stat-label">total raised for charity</span>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Todd Sanders &nbsp;·&nbsp; tjsanders@gmail.com &nbsp;·&nbsp; 352-359-7555</p>
+</footer>
+
+</body>
+</html>

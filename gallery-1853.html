@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery 1853 — Todd Sanders</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <style>
+    .journey {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin: 1.5rem 0 2rem;
+    }
+    .journey-step {
+      display: flex;
+      gap: 1.25rem;
+      padding: 1.25rem 0;
+      border-bottom: 0.5px solid var(--border);
+      align-items: flex-start;
+    }
+    .journey-step:first-child { border-top: 0.5px solid var(--border); }
+    .step-num {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-tertiary);
+      min-width: 24px;
+      padding-top: 2px;
+    }
+    .step-body { flex: 1; }
+    .step-title {
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 3px;
+    }
+    .step-desc {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+      margin: 1.5rem 0;
+    }
+    .category-pill {
+      background: var(--bg-secondary);
+      border-radius: var(--radius-md);
+      padding: 0.75rem 0.5rem;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-secondary);
+      line-height: 1.4;
+      border: 0.5px solid var(--border);
+    }
+    .gallery-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      margin: 1.5rem 0;
+    }
+    .gallery-3 img {
+      width: 100%; height: 180px;
+      object-fit: cover;
+      border-radius: var(--radius-md);
+      border: 0.5px solid var(--border);
+      display: block;
+    }
+    .gallery-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin: 1.5rem 0;
+    }
+    .gallery-2 img {
+      width: 100%; height: 220px;
+      object-fit: cover;
+      border-radius: var(--radius-md);
+      border: 0.5px solid var(--border);
+      display: block;
+    }
+    .wide-img {
+      width: 100%;
+      border-radius: var(--radius-lg);
+      border: 0.5px solid var(--border);
+      display: block;
+      margin: 1.5rem 0;
+    }
+    .book-spread {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin: 1.5rem 0;
+    }
+    .book-spread img {
+      width: 100%;
+      border-radius: var(--radius-md);
+      border: 0.5px solid var(--border);
+      display: block;
+    }
+    .final-stat {
+      background: var(--bg-secondary);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      margin: 2rem 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      text-align: center;
+    }
+    .final-stat-num {
+      font-size: 32px;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .final-stat-label {
+      font-size: 12px;
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">Todd Sanders</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../index.html#projects" class="active">Work</a></li>
+    <li><a href="../press.html">Press</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+
+  <a href="../index.html#projects" class="back-link" style="margin-top:2rem;display:inline-flex;">← All projects</a>
+
+  <img
+    src="../assets/images/gallery-1853/her-photo.jpg"
+    alt="Student delightedly holding up her photo at the Gallery 1853 art show on Union Green"
+    class="hero-img"
+    style="object-position: center 30%;"
+  >
+
+  <p class="section-label">Campaign · University of Florida · November 2016</p>
+  <h1 style="font-size:32px;font-weight:500;letter-spacing:-0.02em;margin-bottom:0.75rem;line-height:1.2">Gallery 1853</h1>
+  <p style="font-size:17px;color:var(--text-secondary);margin-bottom:1.75rem;line-height:1.6">A social media photography contest that became a real art show, a coffee table book, and permanent installation in the President's Office — entirely curated by the UF community.</p>
+
+  <div class="meta-row">
+    <div class="meta-item"><strong>Role</strong> &nbsp; Director of Social Media</div>
+    <div class="meta-item"><strong>Platform</strong> &nbsp; Instagram, Twitter + on-campus</div>
+    <div class="meta-item"><strong>Org</strong> &nbsp; University of Florida</div>
+  </div>
+
+  <hr>
+
+  <p class="section-label">The goal</p>
+  <div class="goal-block">
+    <p>Prove that a hashtag could do more than generate content — it could curate an art collection. The idea was to invite the entire UF community to see campus through a photographer's eye, then take the best of what they captured and give it a physical life worthy of the institution.</p>
+  </div>
+
+  <p class="section-label">How it worked</p>
+
+  <div class="journey">
+    <div class="journey-step">
+      <div class="step-num">01</div>
+      <div class="step-body">
+        <div class="step-title">The call for submissions</div>
+        <div class="step-desc">UF students, faculty, staff and alumni were invited to post their best Gator-centric photography to Instagram or Twitter using #Gallery1853. The contest ran across five categories, each capturing a different facet of life at UF.</div>
+      </div>
+    </div>
+    <div class="journey-step">
+      <div class="step-num">02</div>
+      <div class="step-body">
+        <div class="step-title">300+ submissions</div>
+        <div class="step-desc">The community responded. Over 300 photos were submitted across five categories — a genuine cross-section of campus life as seen through the eyes of the people who live it.</div>
+      </div>
+    </div>
+    <div class="journey-step">
+      <div class="step-num">03</div>
+      <div class="step-body">
+        <div class="step-title">The gallery show on Union Green</div>
+        <div class="step-desc">The UF Social Street Team curated five finalists per category — 25 total — and mounted them in a pop-up art gallery outside the Reitz Union on November 16–17, 2016. The community voted in person for the winner in each category.</div>
+      </div>
+    </div>
+    <div class="journey-step">
+      <div class="step-num">04</div>
+      <div class="step-body">
+        <div class="step-title">The coffee table book</div>
+        <div class="step-desc">All 25 finalist photos were compiled into a coffee table book gifted to a select group of major donors — a tangible artifact of the community's creativity presented at the highest level of the institution.</div>
+      </div>
+    </div>
+    <div class="journey-step">
+      <div class="step-num">05</div>
+      <div class="step-body">
+        <div class="step-title">Permanent display in the President's Office</div>
+        <div class="step-desc">The five category winners — chosen by community vote — were framed and hung permanently in the Office of the President. A hashtag became institutional art.</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="section-label">Five categories</p>
+  <div class="categories">
+    <div class="category-pill">That's So Gainesville</div>
+    <div class="category-pill">Nature on Campus</div>
+    <div class="category-pill">Campus Sunrises / Sunsets</div>
+    <div class="category-pill">School Spirit</div>
+    <div class="category-pill">Passion Project</div>
+  </div>
+
+  <img src="../assets/images/gallery-1853/rules.jpg" alt="#Gallery1853 photo contest promotional graphic showing the five categories and submission rules" class="wide-img">
+
+  <p class="section-label">The gallery show</p>
+  <p class="body-text">On November 16 and 17, 2016, the 25 finalist prints were displayed on tables across Union Green. Passersby stopped to study the work, cast ballots, take selfies with their favorites — and in some cases, discover their own photo on display for the first time.</p>
+
+  <div class="gallery-3">
+    <img src="../assets/images/gallery-1853/vote4.jpg" alt="Student voting at the Gallery 1853 outdoor show">
+    <img src="../assets/images/gallery-1853/vote2.jpg" alt="Two students taking a selfie at the gallery show">
+    <img src="../assets/images/gallery-1853/vote3.jpg" alt="Student reviewing photos at the gallery show">
+  </div>
+
+  <div class="gallery-2">
+    <img src="../assets/images/gallery-1853/vote.jpg" alt="Student holding a ballot at the gallery voting table" style="object-position: center 20%;">
+    <img src="../assets/images/gallery-1853/dog.jpg" alt="Golden retriever attending the Gallery 1853 art show — a very good critic" style="object-position: center 40%;">
+  </div>
+
+  <p class="section-label">The coffee table book</p>
+  <p class="body-text">All 25 finalist images — with photographer credits pulled directly from their Instagram and Twitter posts — were printed in a Gallery 1853 coffee table book. The book was gifted to major donors as a token of the community's creative spirit and a reflection of what UF looks like through the eyes of those who belong to it.</p>
+
+  <div class="book-spread">
+    <img src="../assets/images/gallery-1853/book.jpg" alt="Gallery 1853 coffee table book cover">
+    <img src="../assets/images/gallery-1853/book-inside.jpg" alt="Inside spread of the Gallery 1853 book showing the Nature on Campus winner">
+  </div>
+
+  <img src="../assets/images/gallery-1853/inside-book.jpg" alt="Inside the Gallery 1853 book — Nature on Campus winner with photographer credit and Instagram handle" class="wide-img">
+
+  <p class="section-label">The President's Office</p>
+  <p class="body-text">The five community-voted winners were professionally framed and hung in the Office of the President — alongside the wall text explaining that every image began as a hashtag. A social media campaign had produced work deemed worthy of the most prominent space on campus.</p>
+
+  <div class="gallery-2">
+    <img src="../assets/images/gallery-1853/wall-prez-office.jpg" alt="Gallery 1853 wall text and framed winning photos in the UF President's Office" style="object-position: center;">
+    <img src="../assets/images/gallery-1853/wall-2-prez.jpg" alt="Framed winning photos hanging in the UF President's Office hallway" style="object-position: center;">
+  </div>
+
+  <hr>
+
+  <p class="section-label">The win</p>
+
+  <div class="final-stat">
+    <div>
+      <span class="final-stat-num">300+</span>
+      <span class="final-stat-label">photo submissions via #Gallery1853</span>
+    </div>
+    <div>
+      <span class="final-stat-num">25</span>
+      <span class="final-stat-label">finalists exhibited in a real art show</span>
+    </div>
+    <div>
+      <span class="final-stat-num">5</span>
+      <span class="final-stat-label">winners displayed permanently in the President's Office</span>
+    </div>
+  </div>
+
+  <p class="body-text">Gallery 1853 showed what social media can be when it's treated as a creative platform rather than a broadcast channel. The community didn't just engage — they made something worth hanging on a wall.</p>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Todd Sanders &nbsp;·&nbsp; tjsanders@gmail.com &nbsp;·&nbsp; 352-359-7555</p>
+</footer>
+
+</body>
+</html>
