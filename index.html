@@ -59,7 +59,7 @@
   <div class="project-grid">
 
     <a href="projects/gators-wear-masks.html" class="project-card">
-      <img src="assets/images/gators-wear-masks/ugc-grid.png" alt="Chalkboard with GatorsWearMasks written on it by students" class="project-card-img" style="object-position:center top;">
+      <img src="assets/images/gators-wear-masks/chalkboard.png" alt="Chalkboard with GatorsWearMasks written on it by students" class="project-card-img" style="object-position:center top;">
       <div class="project-card-body">
         <div class="project-card-title">#GatorsWearMasks</div>
         <div class="project-card-desc">81M impressions. 98% mask compliance. A CDC study confirmed it worked.</div>
@@ -142,6 +142,22 @@
   </ul>
   <span class="footer-copy">&copy; 2026 Todd Sanders</span>
 </footer>
+
+<script>
+  function updateActive() {
+    var isProjects = window.location.hash === '#projects';
+    document.querySelectorAll('.nav-links a, .footer-links a').forEach(function(a) {
+      a.classList.remove('active');
+    });
+    if (isProjects) {
+      document.querySelectorAll('a[href="index.html#projects"]').forEach(function(a) { a.classList.add('active'); });
+    } else {
+      document.querySelectorAll('a[href="index.html"]').forEach(function(a) { a.classList.add('active'); });
+    }
+  }
+  updateActive();
+  window.addEventListener('hashchange', updateActive);
+</script>
 
 </body>
 </html>
