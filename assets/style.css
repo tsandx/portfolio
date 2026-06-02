@@ -222,6 +222,7 @@ footer .footer-links a.active {
 footer .footer-copy {
   font-size: 12px;
   color: var(--text-tertiary);
+  text-align: center;
 }
 
 /* PROJECT PAGE */
