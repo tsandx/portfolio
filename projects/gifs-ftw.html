@@ -64,33 +64,23 @@
     .gif-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 2rem 0; }
   </style>
 
-  <style>
+    <style>
     .project-nav {
       display: flex;
       justify-content: space-between;
-      align-items: stretch;
-      gap: 12px;
-      margin: 3rem 0 2rem;
+      align-items: center;
+      padding: 1.5rem 0;
       border-top: 0.5px solid var(--border);
-      padding-top: 2rem;
+      margin: 3rem 0 2rem;
     }
     .project-nav a {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-      padding: 1rem 1.25rem;
-      border: 0.5px solid var(--border);
-      border-radius: var(--radius-md);
-      text-decoration: none;
-      transition: background 0.15s;
-      color: inherit;
+      font-size: 14px;
+      color: var(--text-secondary);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color 0.15s;
     }
-    .project-nav a:hover { background: var(--bg-secondary); }
-    .project-nav a.next { text-align: right; }
-    .nav-label { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-tertiary); font-weight: 500; }
-    .nav-title { font-size: 15px; font-weight: 500; color: var(--text-primary); }
-    .project-nav .spacer { flex: 1; }
+    .project-nav a:hover { color: var(--text-primary); }
   </style>
 </head>
 <body>
@@ -98,7 +88,7 @@
 <nav>
   <div class="nav-left">
     <a href="../index.html" class="nav-logo">Todd Sanders</a>
-    <span class="nav-tagline">Working in social since 2008 &nbsp;·&nbsp; Menlo Park, California</span>
+    <span class="nav-tagline">Working professionally in social since 2008 &nbsp;·&nbsp; Menlo Park, California</span>
   </div>
   <ul class="nav-links">
     <li><a href="../index.html">Home</a></li>
@@ -121,11 +111,6 @@
 
   <h1 style="font-size:32px;font-weight:500;letter-spacing:-0.02em;margin-bottom:0.75rem;line-height:1.2">GIFs FTW!</h1>
   <p style="font-size:17px;color:var(--text-secondary);margin-bottom:1.75rem;line-height:1.6">UF set out to beat Harvard on Giphy. They became the first university to 1 billion GIF views — and kept going, ultimately outpacing Google, Nike, Facebook, Starbucks, and Taco Bell.</p>
-
-  <div class="gallery-2" style="align-items:center;">
-    <img src="../assets/images/gif-dominance/albert.gif" alt="Albert the Alligator animated GIF" style="border-radius:var(--radius-md); height:280px; object-fit:contain;">
-    <img src="../assets/images/gif-dominance/albert-sticks.jpg" alt="Albert the Alligator stickers on Giphy" style="border-radius:var(--radius-md); height:280px;">
-  </div>
 
   <p class="section-label">The goal</p>
   <div class="goal-block">
@@ -176,7 +161,10 @@
   <p class="section-label">When a GIF goes physical</p>
   <p class="body-text">One pixel-art Albert the Alligator GIF became so popular on campus that the team built a life-size physical version out of colored blocks — and took it around campus for students to pose with. Photos of the installation spread organically across social media, extending the GIF's reach into the real world and back online again. A piece of digital content had become a campus landmark.</p>
 
-  <img src="../assets/images/gif-dominance/giphy-stats.png" alt="Students posing with the life-size pixel art Albert the Alligator installation on UF campus, next to the original GIF design" class="wide-img" style="border-radius:var(--radius-md);">
+  <div class="gallery-2">
+    <img src="../assets/images/gif-dominance/giphy-stats.png" alt="Students posing with the life-size pixel art Albert the Alligator installation on UF campus, next to the original GIF design">
+    <img src="../assets/images/gif-dominance/albert-sticks.jpg" alt="Albert the Alligator stickers on Giphy">
+  </div>
 
   <p class="body-text">The reach didn't stop there. One of UF's most-viewed GIFs — Albert the Alligator waving hello — appeared hand-painted on a student's graduation cap at commencement. A GIF that had been viewed hundreds of millions of times online found its way onto someone's most important day. That's not a metric. That's meaning.</p>
 
@@ -201,6 +189,11 @@
 
   <p class="body-text">What started as a deliberate move to outrank Harvard became something much larger — proof that a university social media team, with the right strategy and consistency, could compete at the brand level with the biggest names on the internet. UF didn't just win in higher ed. They won on Giphy.</p>
 
+
+      <div class="project-nav">
+    <a href="orange-bowl-blitz.html">← Orange Bowl Blitz</a>
+    <a href="tweet-race.html">Tweet Race →</a>
+  </div>
   <p class="section-label" style="margin-top:2.5rem;">The community noticed</p>
 
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:1.5rem 0;">
@@ -216,11 +209,6 @@
       class="screenshot-img"
       style="margin:0;"
     >
-  </div>
-
-  <div class="project-nav">
-    <a href="orange-bowl-blitz.html" class="prev"><span class="nav-label">&larr; Previous</span><span class="nav-title">Orange Bowl Blitz</span></a>
-    <a href="tweet-race.html" class="next"><span class="nav-label">Next &rarr;</span><span class="nav-title">Tweet Race</span></a>
   </div>
 
 
