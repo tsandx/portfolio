@@ -5,6 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About — Todd Sanders</title>
   <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .about-hero { padding: 5rem 0 3.5rem; border-bottom: 1px solid var(--border-light); margin-bottom: 3rem; }
+    .about-bio { font-size: 19px; color: var(--text-primary); line-height: 1.65; font-weight: 400; max-width: 640px; margin-bottom: 1.5rem; }
+    .about-bio-secondary { font-size: 17px; color: var(--text-secondary); line-height: 1.75; max-width: 640px; margin-bottom: 1.5rem; }
+    .timeline-item { display: flex; gap: 2rem; padding: 1.5rem 0; border-bottom: 0.5px solid var(--border-light); align-items: flex-start; }
+    .timeline-item:first-child { border-top: 0.5px solid var(--border-light); }
+    .timeline-dates { font-size: 12px; color: var(--text-tertiary); min-width: 100px; padding-top: 3px; font-variant-numeric: tabular-nums; }
+    .timeline-body { flex: 1; }
+    .timeline-role { font-size: 15px; font-weight: 500; color: var(--text-primary); margin-bottom: 2px; }
+    .timeline-org { font-size: 14px; color: var(--text-secondary); }
+    .social-links { display: flex; gap: 1.25rem; margin-top: 2.5rem; flex-wrap: wrap; }
+    .social-link { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: var(--text-secondary); text-decoration: underline; text-underline-offset: 3px; transition: color 0.15s; }
+    .social-link:hover { color: var(--text-primary); }
+  </style>
 </head>
 <body>
 
@@ -22,10 +36,136 @@
 </nav>
 
 <main class="container">
-  <div class="coming-soon">
-    <h2>Coming Soon</h2>
-    <p>Something good is on its way.</p>
+
+  <div class="about-hero">
+    <p class="about-bio">I fell in love with the internet before most people knew it existed, and with social media before it had a job title. By the time it did, I'd already been building communities online for years — first as a webmaster, then as the person who kept asking "what if we tried this?" until someone made it my actual job.</p>
+    <p class="about-bio-secondary">I was the inaugural Director of Social Media at two universities — University of Wisconsin–Green Bay and the University of Florida. At UF, I built a social presence that grew from 500K to over 2 million followers, earned coverage in Wired and The Chronicle of Higher Education, and produced work that ended up in a CDC study and on Giphy's all-time leaderboard above Google, Nike, and Facebook.</p>
+    <p class="about-bio-secondary">I also taught. For three years I was an adjunct lecturer at UF's College of Journalism — teaching the university's first course on storytelling for the social web. The best campaigns I ran came from the same instinct I brought to the classroom: curiosity, trust in the community, and a bias toward making something real rather than something safe.</p>
+    <p class="about-bio-secondary">I'm based in Menlo Park. I moved to the Bay Area because I wanted to be close to what's next — the same reason I joined social media in 2008.</p>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/toddsanders" class="social-link" target="_blank">LinkedIn →</a>
+      <a href="https://x.com/tsand" class="social-link" target="_blank">X →</a>
+      <a href="https://www.tiktok.com/@tsandx" class="social-link" target="_blank">TikTok →</a>
+    </div>
   </div>
+
+  <p class="section-label">Career</p>
+
+  <div style="margin-bottom: 3rem;">
+    <div class="timeline-item">
+      <div class="timeline-dates">2021 – 2023</div>
+      <div class="timeline-body">
+        <div class="timeline-role">Creative Director</div>
+        <div class="timeline-org">University of Florida</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dates">2019 – 2021</div>
+      <div class="timeline-body">
+        <div class="timeline-role">Senior Director of Innovation and Engagement</div>
+        <div class="timeline-org">University of Florida</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dates">2018 – 2021</div>
+      <div class="timeline-body">
+        <div class="timeline-role">Adjunct Lecturer, College of Journalism</div>
+        <div class="timeline-org">University of Florida</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dates">2014 – 2019</div>
+      <div class="timeline-body">
+        <div class="timeline-role">Director of Digital Communications and Social Media</div>
+        <div class="timeline-org">University of Florida</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dates">2013 – 2014</div>
+      <div class="timeline-body">
+        <div class="timeline-role">Director of Social Media</div>
+        <div class="timeline-org">University of Wisconsin–Green Bay</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dates">2011 – 2013</div>
+      <div class="timeline-body">
+        <div class="timeline-role">Social Media Specialist</div>
+        <div class="timeline-org">University of Wisconsin–Green Bay</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dates">2002 – 2011</div>
+      <div class="timeline-body">
+        <div class="timeline-role">Student Affairs Webmaster</div>
+        <div class="timeline-org">University of Wisconsin–Green Bay</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="section-label">By the numbers</p>
+
+  <div class="stats" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 3rem;">
+    <div class="stat">
+      <span class="stat-num">17+</span>
+      <span class="stat-label">years in social media</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">2</span>
+      <span class="stat-label">universities, inaugural Director of Social Media at both</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">2M+</span>
+      <span class="stat-label">followers built at UF</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">7B</span>
+      <span class="stat-label">GIF views on Giphy</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">3</span>
+      <span class="stat-label">CASE Circle of Excellence medals</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">1</span>
+      <span class="stat-label">car won on Twitter</span>
+    </div>
+  </div>
+
+  <p class="section-label">Selected presentations</p>
+
+  <div style="margin-bottom: 4rem;">
+    <div class="timeline-item">
+      <div class="timeline-dates">2019</div>
+      <div class="timeline-body">
+        <div class="timeline-role">Storytime: How to Stay Fresh in an Ever-Changing World</div>
+        <div class="timeline-org">UCDA Design Summit · Savannah, GA</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dates">2018</div>
+      <div class="timeline-body">
+        <div class="timeline-role">The Numbers Game</div>
+        <div class="timeline-org">AMA Symposium for the Marketing of Higher Education · Orlando, FL</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dates">2013</div>
+      <div class="timeline-body">
+        <div class="timeline-role">Humanizing the Brand <span style="font-weight:400;color:var(--text-tertiary);font-size:13px;">keynote</span></div>
+        <div class="timeline-org">PSEWEB Conference · Vancouver, BC</div>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dates">2013</div>
+      <div class="timeline-body">
+        <div class="timeline-role">Authenticity in the Use of Social Media as Organizations</div>
+        <div class="timeline-org">WiscNet Future Technologies Conference · Madison, WI</div>
+      </div>
+    </div>
+  </div>
+
 </main>
 
 <footer>
