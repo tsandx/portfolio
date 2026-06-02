@@ -300,44 +300,21 @@ footer .footer-copy {
 .project-nav {
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
-  gap: 12px;
-  margin: 4rem 0 2rem;
-  padding-top: 2rem;
+  align-items: center;
+  padding: 1.5rem 0;
   border-top: 1px solid var(--border-light);
+  margin: 3rem 0 2rem;
 }
 
 .project-nav a {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding: 1.25rem 1.5rem;
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-md);
-  transition: background 0.15s, border-color 0.15s;
-  color: inherit;
-  background: var(--bg-secondary);
+  font-size: 14px;
+  color: var(--text-secondary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.15s;
 }
 
-.project-nav a:hover {
-  background: var(--bg);
-  border-color: var(--border);
-}
-
-.project-nav a.next { text-align: right; }
-.project-nav .nav-label {
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-tertiary);
-  font-weight: 500;
-}
-.project-nav .nav-title {
-  font-size: 15px;
-  font-weight: 600;
-  color: var(--text-primary);
-}
+.project-nav a:hover { color: var(--text-primary); }
 
 /* TWEET CARD */
 .tweet-card {
@@ -790,6 +767,6 @@ footer .footer-copy {
   .gallery-item.wide { grid-column: span 1; }
   .awards-grid { grid-template-columns: 1fr; }
   .rankings-callout { flex-direction: column; gap: 1.5rem; }
-  .project-nav { flex-direction: column; }
+  .project-nav { flex-direction: row; }
   .stats { grid-template-columns: 1fr 1fr; }
 }
