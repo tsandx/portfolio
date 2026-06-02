@@ -27,6 +27,8 @@
     .cdc-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-tertiary); margin-bottom: 0.5rem; font-weight: 500; }
     .cdc-stat { font-size: 48px; font-weight: 500; letter-spacing: -0.03em; line-height: 1; margin-bottom: 0.5rem; }
     .cdc-desc { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
+    .gwm-stats { grid-template-columns: repeat(3, 1fr); }
+    @media (max-width: 680px) { .gwm-stats { grid-template-columns: repeat(2, 1fr); } }
   </style>
 
     <style>
@@ -174,7 +176,7 @@
 
   <hr>
 
-  <div class="stats" style="grid-template-columns: repeat(3, 1fr);">
+  <div class="stats gwm-stats">
     <div class="stat">
       <span class="stat-num">81M</span>
       <span class="stat-label">total hashtag impressions</span>
