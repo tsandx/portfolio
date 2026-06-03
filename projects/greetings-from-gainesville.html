@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Greetings from Gainesville — Todd Sanders</title>
   <link rel="stylesheet" href="../assets/style.css">
+  <style>
+    .greetings-stats { grid-template-columns: repeat(3, 1fr); }
+    @media (max-width: 680px) { .greetings-stats { grid-template-columns: 1fr; } }
+  </style>
 </head>
 <body>
 
@@ -61,7 +65,7 @@
 
   <p class="body-text">Their messages traveled to 41 states and 34 countries on six continents. In 10 languages, they sent thanks and love to the people who helped them get here.</p>
 
-  <div class="stats">
+  <div class="stats greetings-stats">
     <div class="stat">
       <span class="stat-num">41</span>
       <span class="stat-label">States reached</span>
