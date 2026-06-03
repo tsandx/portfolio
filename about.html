@@ -18,7 +18,21 @@
     .social-links { display: flex; gap: 1.25rem; margin-top: 2.5rem; flex-wrap: wrap; }
     .social-link { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; color: var(--text-secondary); text-decoration: underline; text-underline-offset: 3px; transition: color 0.15s; }
     .social-link:hover { color: var(--text-primary); }
+    .blue-box { border: 1px solid #b5d4f4; border-top: 4px solid #1a3a5c; border-radius: 12px; overflow: hidden; margin: 2rem 0; }
+    .blue-box-header { background: #ffffff; padding: 1.5rem 1.5rem 1.25rem; }
+    .blue-box-header p { font-size: 17px; font-weight: 700; color: var(--text-primary); line-height: 1.3; margin: 0; }
+    .blue-box-body { background: linear-gradient(145deg, #0a1628 0%, #2e4a7a 100%); }
+    .blue-box-prose { padding: 1.75rem 2rem; }
+    .blue-box-prose p { font-size: 16px; color: rgba(255,255,255,0.85); line-height: 1.75; margin: 0; }
+    .blue-box-list { display: flex; justify-content: center; }
+    .blue-box-list-inner { width: 100%; max-width: 560px; padding: 1.25rem 0; }
+    .blue-box-row { display: flex; align-items: center; gap: 12px; padding: 1rem 1.25rem; border-bottom: 0.5px solid rgba(181,212,244,0.15); }
+    .blue-box-row:last-child { border-bottom: none; }
+    .blue-box-row i { font-size: 20px; color: rgba(181,212,244,0.5); flex-shrink: 0; }
+    .blue-box-row span { font-size: 15px; color: #ffffff; line-height: 1.5; }
+    .blue-box-row span.italic { font-style: italic; }
   </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
 </head>
 <body>
 
@@ -42,41 +56,81 @@
       <span style="font-weight:700;">Based social media pro.</span><br>
       <span style="font-weight:400;">Based in Menlo Park, California.</span>
     </h1>
-    <p class="about-bio-secondary">I wasn't sure what to put here. You should already have my <a href="#career" style="color:var(--text-primary);text-decoration:underline;text-underline-offset:3px;">resume</a>, so redundant stuff is just noise. So let's find out if I'm a fit or a red flag?</p>
+    <p class="about-bio-secondary">I wasn't sure what to put here. You should already have my <a href="#career" style="color:var(--text-primary);text-decoration:underline;text-underline-offset:3px;">resume</a>, so instead of adding noise, let's find out if I'm a good fit or a red flag?</p>
   </div>
 
-  <div class="goal-block" style="margin-bottom: 2.5rem;">
-    <p>Before sharing my philosophy for doing social, here's a list of things I won't do:</p>
-    <ul style="margin-top:1rem;padding-left:1.25rem;font-size:19px;color:var(--text-primary);line-height:1.65;font-weight:400;list-style:disc;">
-      <li>mistake a beautiful Instagram grid for a strategy</li>
-      <li>jump on a trend without understanding intent</li>
-      <li>remain silent when asked for ideas</li>
-      <li>dodge blame if something misses the mark</li>
-      <li>expect success without putting in the work</li>
-    </ul>
+  <div class="blue-box">
+    <div class="blue-box-header">
+      <p>Things I won't do:</p>
+    </div>
+    <div class="blue-box-body">
+      <div class="blue-box-list">
+        <div class="blue-box-list-inner" style="max-width:480px;">
+          <div class="blue-box-row">
+            <i class="ti ti-layout-grid"></i>
+            <span>mistake a beautiful Instagram grid for a strategy</span>
+          </div>
+          <div class="blue-box-row">
+            <i class="ti ti-trending-up"></i>
+            <span>jump on a trend without understanding intent</span>
+          </div>
+          <div class="blue-box-row">
+            <i class="ti ti-clock"></i>
+            <span>expect success without putting in the work</span>
+          </div>
+          <div class="blue-box-row">
+            <i class="ti ti-shield-off"></i>
+            <span>dodge blame if something misses the mark</span>
+          </div>
+          <div class="blue-box-row">
+            <i class="ti ti-message-off"></i>
+            <span>remain silent when asked for ideas</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <p class="about-bio-secondary" style="margin-bottom:2.5rem;">Social's relationship with marketing is where opportunity thrives or dies. Brands that live strictly inside their style guide are usually invisible to the people they're trying to reach. Social media moves faster than any marketing department can document. Real-time content requires real-time judgment — the ability to understand a brand so deeply that your voice becomes its voice. I do push limits, but at my age I've learned to avoid injury by bending not breaking. Placing the brand above the engagement-seeking noise, and firmly under the community it supports. Social has the potential to be beautiful, but a brand can't stare in the mirror and expect it to happen.</p>
+  <p class="about-bio-secondary" style="margin-bottom:2.5rem;">Social's relationship with marketing is where opportunity thrives or dies. Brands that live strictly inside their style guide are usually invisible to the people they're trying to reach on social. Social media moves faster than any marketing department can document. Real-time content requires real-time judgment. The ability to understand a brand so deeply that your voice becomes its voice. I do push limits, but at my age I've learned to avoid injury by bending not breaking. I believe in placing the brand above the engagement-seeking noise, but firmly under the community it supports and cultivates. Social has the potential to be beautiful, but a brand can't stare in the mirror and expect it to happen.</p>
 
-  <p class="about-bio-secondary" style="margin-bottom: 3rem;">I love analytics, especially real-time data for agility and benchmarking for growth. But I also trust intuition and the magic of the unexpected. TikTok is a perfect example — we were there before our community knew it existed. The early numbers said abandon it. The gut said give it time. We stayed, we learned, we became the university others were chasing. You can't buy what we were able to earn.</p>
+  <div class="blue-box">
+    <div class="blue-box-header">
+      <p>Let numbers motivate not dictate</p>
+    </div>
+    <div class="blue-box-body blue-box-prose">
+      <p>I love analytics, especially real-time data for agility and benchmarking for growth. But I also trust intuition and the magic of the unexpected. TikTok is a perfect example — we were there before our community knew it existed. The early numbers said abandon it. The gut said give it time. We stayed, we learned, we became the university others were chasing. You can't buy the social street cred we were able to gain... priceless and powerful.</p>
+    </div>
+  </div>
 
-  <p class="section-label">Philosophy</p>
-
-  <div style="margin-bottom: 3rem;">
-    <div style="border-left: 3px solid var(--text-primary); padding-left: 1.5rem; margin-bottom: 2rem;">
-      <p style="font-size: 20px; color: var(--text-primary); line-height: 1.55; font-weight: 400; margin-bottom: 0;">"If you're not having fun creating the meal, don't expect others to enjoy consuming it."</p>
+  <div class="blue-box">
+    <div class="blue-box-header">
+      <p>My mantra, a philosophy? Nah, just vibes...</p>
     </div>
-    <div style="border-left: 3px solid var(--text-primary); padding-left: 1.5rem; margin-bottom: 2rem;">
-      <p style="font-size: 20px; color: var(--text-primary); line-height: 1.55; font-weight: 400; margin-bottom: 0;">"If you do the job right, your community will make your job obsolete."</p>
-    </div>
-    <div style="border-left: 3px solid var(--text-primary); padding-left: 1.5rem; margin-bottom: 2rem;">
-      <p style="font-size: 20px; color: var(--text-primary); line-height: 1.55; font-weight: 400; margin-bottom: 0;">"Social doesn't sleep. Opportunities are born at night and raised on weekends."</p>
-    </div>
-    <div style="border-left: 3px solid var(--text-primary); padding-left: 1.5rem; margin-bottom: 2rem;">
-      <p style="font-size: 20px; color: var(--text-primary); line-height: 1.55; font-weight: 400; margin-bottom: 0;">"Show and tell doesn't always make the audience think and feel."</p>
-    </div>
-    <div style="border-left: 3px solid var(--text-primary); padding-left: 1.5rem;">
-      <p style="font-size: 20px; color: var(--text-primary); line-height: 1.55; font-weight: 400; margin-bottom: 0;">"People are awesome, people are assholes. Don't water the weeds."</p>
+    <div class="blue-box-body">
+      <div class="blue-box-list">
+        <div class="blue-box-list-inner">
+          <div class="blue-box-row">
+            <i class="ti ti-chef-hat"></i>
+            <span class="italic">If you're not having fun cooking the meal, don't expect others to enjoy eating it.</span>
+          </div>
+          <div class="blue-box-row">
+            <i class="ti ti-users"></i>
+            <span class="italic">Do the job right and your community should make your job obsolete.</span>
+          </div>
+          <div class="blue-box-row">
+            <i class="ti ti-moon"></i>
+            <span class="italic">Social doesn't sleep. Opportunities are born at night and on weekends.</span>
+          </div>
+          <div class="blue-box-row">
+            <i class="ti ti-brain"></i>
+            <span class="italic">Show and tell doesn't always make the audience think and feel.</span>
+          </div>
+          <div class="blue-box-row">
+            <i class="ti ti-plant"></i>
+            <span class="italic">People are awesome, people are assholes. Don't water the weeds.</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
