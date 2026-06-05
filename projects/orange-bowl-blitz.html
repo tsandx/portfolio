@@ -66,9 +66,14 @@
     </div>
   </div>
 
-  <div style="display:flex; gap:8px; margin-top:0; align-items:flex-start;">
-    <img src="../assets/images/orange-bowl-blitz/billboard-designs.jpg" alt="Billboard design concepts for the Orange Bowl Blitz campaign" style="height:320px; width:auto; border-radius:var(--radius-md); border:0.5px solid var(--border); display:block;">
-    <img src="../assets/images/orange-bowl-blitz/locations-routes.jpg" alt="Map showing the routes and locations of LED trucks and billboards across Miami" style="height:320px; width:auto; border-radius:var(--radius-md); border:0.5px solid var(--border); display:block;">
+  <style>
+    .designs-grid { display: flex; gap: 8px; margin: 1.5rem 0 2.5rem; }
+    .designs-grid img { width: 50%; height: auto; border-radius: var(--radius-md); border: 0.5px solid var(--border); display: block; }
+    @media (max-width: 680px) { .designs-grid { flex-direction: column; } .designs-grid img { width: 100%; } }
+  </style>
+  <div class="designs-grid">
+    <img src="../assets/images/orange-bowl-blitz/billboard-designs.jpg" alt="Billboard design concepts for the Orange Bowl Blitz campaign">
+    <img src="../assets/images/orange-bowl-blitz/locations-routes.jpg" alt="Map showing the routes and locations of LED trucks and billboards across Miami">
   </div>
 
   <p class="section-label">The social push</p>
